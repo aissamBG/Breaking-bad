@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Oswald', sans-serif;
+    background-image: url("images/brk2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* Heading */
+h1{
+    text-align: center;
+    font-size: 50px;
+    margin: 0;
+    letter-spacing: 30px;
+    color: #FFFF00;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+select{
+    width: 100%;
+    margin: 0 auto 50px;
+    padding: 5px 15px;
+    color: #0AFF18;
+    font-size: 18px;
+    font-weight: 800;
+    outline: none;
+    background-color:#152412b6;
+    border-color:#152412;
+    border-radius: 5px;
+}
+@media (max-width:571px){
+    h1{
+        letter-spacing:normal;
+        margin-bottom: 15px;
+    }
+}
+@media (max-width:991px){
+    select{
+        margin: 0 auto 0px;
+    }
+}
+/* Information */
+.informations{
+    font-size: 26px;
+    font-weight: 500;
+    color:#FFFF00;
+}
+.informations .name-occupation{
+    float:right;
+    width: 49%;
+    margin-left: 1%;
+    margin-top: 45px;
+}
+.informations .name,.informations .occupation,.informations .nick-name{
+    margin-bottom: 30px;
+    position: relative;
+}
+.informations .name span,.informations .occupation span,.informations .nick-name span{
+    display: inline-block;
+    width: 25%;
+    font-weight: bold;
+    color:  #0AFF18;
+}
+.informations .occupation span{
+    position: absolute;
+    top: 0;
+}
+.informations .occupation .ocp{
+    width: 75%;
+    float: right;
+}
+.informations .img{
+    width: 50%;
+    float: left;
+}
+.informations .image{
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 4px;
+    box-shadow: 0 0 8px #000;
+}
+@media (max-width:1340px){
+    .informations .name span,.informations .occupation span,.informations .nick-name span{
+        display: block;
+    }
+    .informations .occupation span{
+        position:static;
+    }    
+    .informations .occupation .ocp{
+        float: none;
+    }
+}
+@media (max-width:991px){
+    .informations{
+        font-size: 20px;
+        font-weight: 500;
+        color:#FFFF00;
+    }    
+    .informations .img{
+        width: 100%;
+        float:none;
+    }    
+    .informations .image{
+        margin-left: 0;
+    }     
+    .informations .name-occupation{
+        float:none;
+        width: 100%;
+    }   
+}
